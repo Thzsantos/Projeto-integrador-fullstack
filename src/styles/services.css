@@ -1,0 +1,69 @@
+.section-services {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 35px 40px 45px;
+    background: linear-gradient(
+        var(--color-gradiant-black),
+        var(--color-secondary-text)
+    );
+}
+
+.services-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin: 0 auto;
+    
+}
+
+.title-services {
+    text-align: center;
+    padding-bottom: 40px;
+    color: var(--color-secondary-white);
+    font-size: var(--font-headline-h2-size);
+}
+
+
+/* =====================================================
+   RESPONSIVIDADE
+===================================================== */
+
+/* Tablets */
+@media (max-width: 1024px) {
+
+    .section-services {
+        padding: 35px 30px 45px;
+    }
+
+    .services-container {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+
+    .title-services {
+        padding-bottom: 30px;
+        font-size: 36px;
+    }
+}
+
+
+/* Celulares */
+@media (max-width: 768px) {
+
+    .section-services {
+        padding: 30px 20px 40px;
+    }
+
+    .services-container {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .title-services {
+        padding-bottom: 25px;
+        font-size: 32px;
+    }
+}
+
